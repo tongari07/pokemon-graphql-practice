@@ -1,0 +1,9 @@
+schema: "https://graphql-pokemon2.vercel.app"
+generates:
+  ./src/@types/types.d.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+  ./schema.graphql:
+    plugins:
+      - schema-ast

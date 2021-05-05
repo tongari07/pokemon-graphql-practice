@@ -1,7 +1,11 @@
 import React from "react"
 
 function App() {
-    return <div>pokemon-graphql-practice</div>
+    return (
+        <ApolloProvider client={apolloClient}>
+            <div>pokemon-graphql-practice</div>
+        </ApolloProvider>
+    )
 }
 
 export default App

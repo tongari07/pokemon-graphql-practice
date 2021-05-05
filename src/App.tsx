@@ -11,7 +11,7 @@ function App() {
         <>
             <SearchForm setpokemonName={setpokemonName}></SearchForm>
             <ApolloProvider client={apolloClient}>
-                <SearchResultField></SearchResultField>
+                {pokemonName && <SearchResultField pokemonName={pokemonName}></SearchResultField>}
             </ApolloProvider>
         </>
     )

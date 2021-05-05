@@ -1,9 +1,11 @@
-import React from "react"
+import { ApolloProvider } from "@apollo/client"
+import { apolloClient } from "./graphql/client"
+import { SearchResultField } from "./components/SearchResultField"
 
 function App() {
     return (
         <ApolloProvider client={apolloClient}>
-            <div>pokemon-graphql-practice</div>
+            <SearchResultField></SearchResultField>
         </ApolloProvider>
     )
 }
